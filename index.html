@@ -65,7 +65,7 @@
                                         data-bind="class: $data.Dias + ' ' + $data.Tipos + ' ' + $data.DiasTipos , attr:{id:$data.CursoCorto}"
                                         style="min-width: 20%; display: block;">
 
-                                        <img class="card-img-top mt-2" data-bind="attr:{src: 'img/imagen.png'},
+                                        <img class="card-img-top mt-2" data-bind="attr:{src: 'cursos/'+ $data.CursoCorto + '.png'},
                                                       click: function(data) { filtroTotal('-1', $data.CursoCorto,'-1') }"
                                             alt="Card image cap">
 
