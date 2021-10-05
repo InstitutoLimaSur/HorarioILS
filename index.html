@@ -33,7 +33,9 @@
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-
+                                <label class="form-check-label w-100 text-center" style="border: 2px solid #D0c5e7; margin: 5px 0 15px 0;">
+                                    ¿Qué día prefieres?
+                                </label>   
                                 <div class="row col-md-12 col-sm-12 col-lg-12 justify-content-center" id="selector"
                                     data-bind="foreach: DiasSemana">
                                     <div class="col-4 col-md-4 col-sm-4 col-lg-4">
@@ -45,7 +47,7 @@
                                 </div>
 
                                 <div id="FiltroPresencial">
-                                    <label class="form-check-label w-100 text-center" style="border: 2px solid #D0c5e7;">
+                                    <label class="form-check-label w-100 text-center" style="border: 2px solid #D0c5e7;margin: 0 0 15px 0;">
                                         ¡Activa el Filtro de Clases Presenciales!
                                     </label>               
                                     <div class="form-check form-switch" style="display: flex; justify-content: center; margin: 6px;">
@@ -57,7 +59,9 @@
                                         </label>
                                     </div>
                                 </div>
-
+                                <label class="form-check-label w-100 text-center" style="border: 2px solid #D0c5e7; margin: 15px 0;">
+                                    ¿Qué curso quieres llevar?
+                                </label>   
                                 <div id="ListaCursos" class="row justify-content-center"
                                     data-bind="foreach: CursosDisponibles"
                                     style="justify-content: space-evenly!important;">
