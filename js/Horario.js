@@ -37,7 +37,7 @@ var CursosDisponibles = [
       "Dias":"Lunes Martes Miercoles Jueves Viernes Sabado",
       "Tipos":"Presencial"
    },
-   { "Curso": "Antiguo Testamento 1A", "CursoCorto": "AntiguoTestamento1A", "DiasTipos": "MartesVirtual", "Dias": "Martes", "Tipos": "Virtual" },
+   //{ "Curso": "Antiguo Testamento 1A", "CursoCorto": "AntiguoTestamento1A", "DiasTipos": "MartesVirtual", "Dias": "Martes", "Tipos": "Virtual" },
    { "Curso": "Coro Avanzado A", "CursoCorto": "CoroAvanzadoA", "DiasTipos": "JuevesVirtual MiercolesVirtual", "Dias": "Jueves Miercoles", "Tipos": "Virtual" },
    { "Curso": "Doctrina y Convenios 2 B", "CursoCorto": "DoctrinayConvenios2B", "DiasTipos": "MartesVirtual", "Dias": "Martes", "Tipos": "Virtual" },
    { "Curso": "Edifiquemos un Matrimonio Eterno A", "CursoCorto": "EdifiquemosunMatrimonioEternoA", "DiasTipos": "MartesVirtual MiercolesVirtual", "Dias": "Martes Miercoles", "Tipos": "Virtual" },
