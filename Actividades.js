@@ -4,7 +4,6 @@ var reunion = '#B81b1b'
 var actividad = 'green'
 var devocional = 'orange'
 var fiesta = 'blue'
-var fiesta = 'yellow'
 
 var events = [
     {
