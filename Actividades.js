@@ -3,7 +3,8 @@
 var reunion = '#B81b1b'
 var actividad = 'green'
 var devocional = 'orange'
-var fiesta = 'blue'
+var fiesta = 'blue',
+var fiesta = 'yellow'
 
 var events = [
     {
@@ -26,6 +27,27 @@ var events = [
         description: ' --- Ver Descripción --- ',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: actividad
+    },
+    {
+        title: 'Ensayo Elenco ILS',
+        start: '2022-09-09 19:30',
+        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
+        link: 'https://institutolimasur.github.io/HorarioILS/',
+        color: fiesta
+    },
+    {
+        title: 'Ensayo Elenco ILS',
+        start: '2022-09-23 19:30',
+        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
+        link: 'https://institutolimasur.github.io/HorarioILS/',
+        color: fiesta
+    },
+    {
+        title: 'Ensayo Elenco ILS',
+        start: '2022-09-30 19:30',
+        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
+        link: 'https://institutolimasur.github.io/HorarioILS/',
+        color: fiesta
     },
     {
         title: 'Fiesta de Gala',
