@@ -9,19 +9,56 @@
     <link rel="shortcut icon" href="img/Logotype CEIR Purple.png">
     <base href=".">
     <link href="css/bootstrap.css" rel="stylesheet">
+
+
     <link href="css/app.css" rel="stylesheet">
+
+    <!-- CSS for full calender -->
+    <link href="https://fullcalendar.io/js/fullcalendar-3.8.2/fullcalendar.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <app>
 
+
+    <nav class="navbar navbar-expand-lg" id="MenuPrincipal">
+        <div id="ContenedorLogo" style="width: 20%;">
+            <img src="img/Logotype CEIR Purple.png" id="ImgLogo">
+        </div>
+        <div id="ContenedorMenuNavegacion">
+            <div class="container-fluid" id="MenuNavegacion">
+                <button class="navbar-toggler" style="margin-left: auto;color:transparent;background-color: #301b92;"
+                    type="button" onclick="OcultarMostrarMenu()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="Desplegable">
+                    <div id="OpcionesNavegacion">
+                        <a href="index.html">
+                            Horarios
+                        </a>
+                        <a href="Actividades.html">
+                            Calendario
+                        </a>
+                        <a href="RedesSociales.html">
+                            Redes Sociales
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+        </div>
+
+    </nav>
+    <app>
 
         <div class="main">
             <div class="content" style=" padding-right: 12px !important;   padding-left: 12px!important;">
 
-                <img style="width:100%; " src="img/Wallpaper PC Purple.png">
-
-                <br> <br>
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
@@ -33,9 +70,10 @@
                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <label class="form-check-label w-100 text-center" style="border: 2px solid #D0c5e7; margin: 5px 0 15px 0;">
+                                <label class="form-check-label w-100 text-center"
+                                    style="border: 2px solid #D0c5e7; margin: 5px 0 15px 0;">
                                     ¿Qué día prefieres?
-                                </label>   
+                                </label>
                                 <div class="row col-md-12 col-sm-12 col-lg-12 justify-content-center" id="selector"
                                     data-bind="foreach: DiasSemana">
                                     <div class="col-4 col-md-4 col-sm-4 col-lg-4">
@@ -47,21 +85,23 @@
                                 </div>
 
                                 <div id="FiltroPresencial">
-                                    <label class="form-check-label w-100 text-center" style="border: 2px solid #D0c5e7;margin: 0 0 15px 0;">
+                                    <label class="form-check-label w-100 text-center"
+                                        style="border: 2px solid #D0c5e7;margin: 0 0 15px 0;">
                                         ¡Activa el Filtro de Clases Presenciales!
-                                    </label>               
-                                    <div class="form-check form-switch" style="display: flex; justify-content: center; margin: 6px;">
-                                        <input style="margin-right: 6px;" 
-                                            onchange="filtroTotal('-1','-1','0');"
+                                    </label>
+                                    <div class="form-check form-switch"
+                                        style="display: flex; justify-content: center; margin: 6px;">
+                                        <input style="margin-right: 6px;" onchange="filtroTotal('-1','-1','0');"
                                             class="form-check-input" type="checkbox" id="flexSwitchCheckChecked">
                                         <label class="form-check-label" for="flexSwitchCheckChecked" id="textoFiltro">
                                             Filtro Desactivado
                                         </label>
                                     </div>
                                 </div>
-                                <label class="form-check-label w-100 text-center" style="border: 2px solid #D0c5e7; margin: 15px 0;">
+                                <label class="form-check-label w-100 text-center"
+                                    style="border: 2px solid #D0c5e7; margin: 15px 0;">
                                     ¿Qué curso quieres llevar?
-                                </label>   
+                                </label>
                                 <div id="ListaCursos" class="row justify-content-center"
                                     data-bind="foreach: CursosDisponibles"
                                     style="justify-content: space-evenly!important;">
@@ -70,9 +110,9 @@
                                         data-bind="class: $data.Dias + ' ' + $data.Tipos + ' ' + $data.DiasTipos , attr:{id:$data.CursoCorto}"
                                         style="min-width: 20%; display: block;">
 
-                                        <img class="card-img-top mt-2" data-bind="attr:{src: 'cursos/'+ $data.CursoCorto + '.png'},
-                                                      click: function(data) { filtroTotal('-1', $data.CursoCorto,'-1') }"
-                                            alt="Card image cap">
+                                        <img class="card-img-top mt-2"
+                                            data-bind="attr:{src: 'cursos/'+ $data.CursoCorto + '.png'},
+                                                      click: function(data) { filtroTotal('-1', $data.CursoCorto,'-1') }" alt="Card image cap">
 
                                         <div style="flex: 1 1 auto; margin-top: 8px;">
 

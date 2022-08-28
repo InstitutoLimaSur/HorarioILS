@@ -1,0 +1,400 @@
+body {
+    background-repeat: repeat;
+    background-size: 100%;
+    background-image: url("../img/Wallpaper Mobile Purple.png");
+}
+
+#ContenedorMenuNavegacion {
+    width: 60%;
+    margin-bottom: auto;
+    margin-left: auto;
+}
+
+#MenuPrincipal {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+}
+
+hr,
+#MenuNavegacion {
+    width: 93%;
+    margin: 0 5% 5px auto !important;
+}
+
+hr {
+    height: 2px !important;
+    background-color: #7f57c3 !important;
+    border-radius: 5px !important;
+    opacity: 1 !important;
+}
+
+#MenuNavegacion {
+    padding: 25px 20px 8px 20px;
+    color: #7f57c3 !important;
+    font-family: aileron, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+#OpcionesNavegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+#OpcionesNavegacion>a {
+    text-decoration: none;
+    color: #7f57c3 !important;
+
+}
+
+#OpcionesNavegacion>a:hover {
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../img/menu.png") !important;
+}
+
+
+
+
+#ImgLogo {
+    width: 35%;
+    filter: grayscale(0.1);
+    margin-left: 2%;
+}
+
+
+
+#BloqueSuperior {
+    padding-bottom: 150px;
+    position: relative;
+}
+
+
+#BloqueSuperior::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../img/img_principal_pc.svg");
+    filter: opacity(55%);
+}
+
+#Inside {
+    /* This will make it stack on top of the ::before */
+    position: relative;
+}
+
+.BotonSFF {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 115px;
+    font-family: IntroRustBase;
+    text-align: center;
+    line-height: 110px;
+    font-size: 40px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../img/Boton_General.svg");
+    transition: 0.5s;
+}
+
+.BotonSFF:hover {
+    cursor: pointer;
+    color: #366E8B;
+    background-image: url("../img/Boton_Alternativo.svg");
+    transition: 0.5s;
+}
+
+.BotonSFFIndex {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 115px;
+    font-family: IntroRustBase;
+    text-align: center;
+    line-height: 100px;
+    font-size: 35px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url("../img/Boton_General.svg");
+    transition: 0.5s;
+}
+
+.BotonSFFIndex:hover {
+    cursor: pointer;
+    color: #366E8B;
+    background-image: url("../img/Boton_Alternativo.svg");
+    transition: 0.5s;
+}
+
+
+
+
+
+#TextoSuperiorBoton {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@media (max-width: 1620px) {
+    #BloqueSuperior {
+        padding-bottom: 50px;
+    }
+
+    #ContenedorSlides {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1330px) {
+    #ContenedorSlides {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .rumble {
+        width: 30% !important;
+        height: 200px;
+    }
+
+    #MenuNavegacion {
+        padding: 25px 0px 8px 0px;
+        font-size: 20px;
+    }
+
+    #FreeContent {
+        height: 200px;
+    }
+
+    #TextoSuperior {
+        margin: 15px auto;
+    }
+
+    #MenuPrincipal {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #ContenedorSlides {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar-toggler{
+        display: block;
+    }
+
+    #ContenedorMenuNavegacion {
+        margin-right: auto;
+        margin-left: 0% !important;
+    }
+
+    #ContenedorImgSuper {
+        display: none;
+    }
+
+    #TextoSuperior {
+        width: 70%;
+    }
+
+    #TextoSuperior>p {
+        font-size: 25px !important;
+    }
+
+    #BloqueSuperior::before {
+        background-image: url("../img/img_principal_cel.svg");
+    }
+
+    #ContenedorSlides {
+        margin-top: 50px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    a {
+        width: 100%;
+        margin-left: 3%;
+    }
+
+    #OpcionesNavegacion {
+        margin-left: auto;
+        flex-wrap: wrap;
+        margin-top: 12px;
+    }
+
+    #MenuPrincipal {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #MenuNavegacion {
+        margin: 0 auto 0 1% !important;
+        padding: 15px 20px 8px 2px;
+
+    }
+
+    #MenuNavegacion>button {
+        margin: 0 auto 0 1% !important;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    #ContenedorLogo {
+        margin-left: auto;
+        margin-bottom: auto;
+    }
+
+    .ImagenesMenu {
+        display: none;
+    }
+
+
+    #ImgLogo {
+        width: 35%;
+        display: block;
+        margin-left: auto !important;
+        margin-right: 2%;
+        filter: grayscale(0.1);
+    }
+
+    .ImagenesCirculares {
+        margin-bottom: 20px;
+    }
+
+    #SuperIzq {
+        position: absolute;
+        right: 30%;
+        top: -20px;
+    }
+
+    #SuperDer {
+        position: absolute;
+        left: 30%;
+        top: 30px;
+    }
+
+    .rumble {
+        width: 45% !important;
+    }
+
+    .fc-view>table {
+        width: 900px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    #FreeContent {
+        height: 200px;
+    }
+
+    #ContenedorSlides {
+        margin-top: 50px;
+    }
+
+    #ImgLogo {
+        width: 55%;
+        display: block;
+        margin-right: 4%;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 650px) {
+    #ContenedorSlides {
+        margin-top: 50px;
+    }
+
+    .rumble {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 550px) {
+    #ContenedorSlides {
+        margin-top: 50px;
+    }
+
+    .BotonSFF .BotonSFFIndex {
+        line-height: 90px;
+        font-size: 35px;
+    }
+
+    .ComingSoon {
+        font-size: 18px;
+    }
+
+    #SendButton {
+        width: 50% !important;
+        display: block;
+        margin: auto;
+    }
+
+    #Email {
+        height: 35px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    #OpcionesNavegacion>a {
+        font-weight: normal;
+    }
+
+    #MenuPrincipal {
+        margin-bottom: 0px;
+    }
+
+    #ContenedorSlides {
+        margin-top: 20px;
+    }
+
+    #TextoSuperior {
+        margin: 20px auto;
+    }
+
+    .BotonSFF {
+        width: 80%;
+        height: 95px;
+        line-height: 85px;
+        font-size: 32px;
+    }
+
+    .BotonSFFIndex {
+        width: 80%;
+        height: 95px;
+        line-height: 75px;
+        font-size: 25px;
+    }
+
+    #FreeContent {
+        height: 100px;
+    }
+
+    #TextoSuperiorBoton {
+        font-size: 18px !important;
+    }
+
+}
+
+@font-face {
+    font-family: "IntroRustBase";
+    src: url("../css/IntroRust-Base.otf");
+}

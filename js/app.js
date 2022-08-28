@@ -126,3 +126,15 @@ function limpiarSeleccionCurso() {
         coleccion[i].style.borderColor = 'rgba(0,0,0,.125)';
     }
 }
+
+var esOculto = true;
+function OcultarMostrarMenu(){
+    if(esOculto){
+        esOculto = false
+        $("#Desplegable").fadeIn();
+    }else{
+        esOculto = true;
+        $("#Desplegable").fadeOut();
+    }
+}
+
