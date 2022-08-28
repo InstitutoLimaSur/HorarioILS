@@ -38,6 +38,7 @@ hr {
     font-style: normal;
     font-size: 22px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 #OpcionesNavegacion {
@@ -174,7 +175,6 @@ hr {
 
     #MenuNavegacion {
         padding: 25px 0px 8px 0px;
-        font-size: 20px;
     }
 
     #FreeContent {
@@ -186,7 +186,7 @@ hr {
     }
 
     #MenuPrincipal {
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 }
 
@@ -204,8 +204,13 @@ hr {
     #ContenedorMenuNavegacion {
         margin-right: auto;
         margin-left: 0% !important;
+        width: 90% !important;
     }
-
+    #ContenedorLogo {
+        margin-left: auto;
+        margin-bottom: auto;
+        width: 10% !important;
+    }
     #ContenedorImgSuper {
         display: none;
     }
@@ -235,11 +240,7 @@ hr {
         margin-left: 3%;
     }
 
-    #OpcionesNavegacion {
-        margin-left: auto;
-        flex-wrap: wrap;
-        margin-top: 12px;
-    }
+
 
     #MenuPrincipal {
         display: flex;
@@ -247,8 +248,7 @@ hr {
     }
 
     #MenuNavegacion {
-        margin: 0 auto 0 1% !important;
-        padding: 15px 20px 8px 2px;
+        margin: auto !important;
 
     }
 
@@ -258,10 +258,7 @@ hr {
         margin-right: auto;
     }
 
-    #ContenedorLogo {
-        margin-left: auto;
-        margin-bottom: auto;
-    }
+
 
     .ImagenesMenu {
         display: none;
@@ -269,7 +266,7 @@ hr {
 
 
     #ImgLogo {
-        width: 35%;
+        width: 100%;
         display: block;
         margin-left: auto !important;
         margin-right: 2%;
@@ -311,11 +308,19 @@ hr {
     }
 
     #ImgLogo {
-        width: 55%;
         display: block;
-        margin-right: 4%;
-        margin-top: 5px;
+        margin-top: 0px;
     }
+    #ContenedorMenuNavegacion {
+        width: 88% !important;
+        margin: auto;
+    }
+    #ContenedorLogo {
+        margin: auto 0 auto auto;
+        width: 10% !important;
+        margin-right: 2%;
+    }
+
 }
 
 @media (max-width: 650px) {
@@ -326,6 +331,13 @@ hr {
     .rumble {
         width: 100% !important;
     }
+    #ContenedorMenuNavegacion {
+        width: 87% !important;
+    }
+    #ContenedorLogo {
+        width: 11% !important;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -351,6 +363,19 @@ hr {
     #Email {
         height: 35px !important;
     }
+    #ContenedorMenuNavegacion {
+        width: 85% !important;
+    }
+    #ContenedorLogo {
+        width: 13% !important;
+    }
+    #MenuNavegacion{
+        width: 100%;
+        padding: 8px 20px 8px 20px;
+    }
+    #MenuPrincipal{
+        margin-bottom: 40px !important;
+    }
 }
 
 @media (max-width: 450px) {
@@ -359,7 +384,7 @@ hr {
     }
 
     #MenuPrincipal {
-        margin-bottom: 0px;
+        margin-bottom: 30px !important;
     }
 
     #ContenedorSlides {
@@ -391,9 +416,26 @@ hr {
     #TextoSuperiorBoton {
         font-size: 18px !important;
     }
+    #ContenedorMenuNavegacion {
+        width: 85% !important;
+    }
+    #ContenedorLogo {
+        width: 13% !important;
+    }
+    #MenuNavegacion{
+        font-size: 20px;
+    }
 
 }
+@media (max-width: 400px) {
+    #MenuNavegacion{
+        font-size: 18px;
+    }  
+      #MenuPrincipal {
+        margin-bottom: 20px !important;
+    }
 
+}
 @font-face {
     font-family: "IntroRustBase";
     src: url("../css/IntroRust-Base.otf");
