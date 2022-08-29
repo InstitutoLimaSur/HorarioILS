@@ -4,6 +4,7 @@ var reunion = '#B81b1b'
 var actividad = 'green'
 var devocional = 'orange'
 var fiesta = 'blue'
+var ensayo = '#E65100'
 
 var events = [
     {
@@ -26,27 +27,6 @@ var events = [
         description: ' --- Ver Descripción --- ',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: actividad
-    },
-    {
-        title: 'Ensayo Elenco ILS',
-        start: '2022-09-09 19:30',
-        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
-        link: 'https://institutolimasur.github.io/HorarioILS/',
-        color: fiesta
-    },
-    {
-        title: 'Ensayo Elenco ILS',
-        start: '2022-09-23 19:30',
-        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
-        link: 'https://institutolimasur.github.io/HorarioILS/',
-        color: fiesta
-    },
-    {
-        title: 'Ensayo Elenco ILS',
-        start: '2022-09-30 19:30',
-        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
-        link: 'https://institutolimasur.github.io/HorarioILS/',
-        color: fiesta
     },
     {
         title: 'Fiesta de Gala',
@@ -96,23 +76,84 @@ var events = [
         description: 'Reunión del Consejo Estudiantil',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: reunion
+    },
+    {
+        title: 'Ensayo Elenco ILS',
+        start: '2022-09-09 19:30',
+        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
+        link: 'https://institutolimasur.github.io/HorarioILS/',
+        color: ensayo
+    },
+    {
+        title: 'Ensayo Elenco ILS',
+        start: '2022-09-23 19:30',
+        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
+        link: 'https://institutolimasur.github.io/HorarioILS/',
+        color: ensayo
+    },
+    {
+        title: 'Ensayo Elenco ILS',
+        start: '2022-09-30 19:30',
+        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
+        link: 'https://institutolimasur.github.io/HorarioILS/',
+        color: ensayo
     }
 ]
 
 
+var calendarEl = document.getElementById('calendar');
+
+var calendar = new FullCalendar.Calendar(calendarEl, {
+    //initialView: 'listYear',
+    initialView: 'dayGridMonth',
+    events: events,
+    locale:'es',
+    eventClick: function (info) {
+        console.log(info)
+        var botonHtml = "<a class='btn btn-sm btn-primary' style='width: 50%;margin: 0 auto 10px auto;display: block;' href='" + info.event._def.extendedProps.link + "'>See more</a>"
+        $('#event-title').text(info.event.title);
+        $('#event-description').html(info.event._def.extendedProps.description);
+        $('#event-link').html(botonHtml);
+        $('#modal-event').modal('show')
+        $('#modal-event').modal();
+    }
+});
+calendar.render();
+
+if (screen.width < 600) {
+    document.getElementsByClassName("fc-view-harness")[0].style.height = "425px";
+}
 
 
-$(document).ready(function () {
-    $('#calendar').fullCalendar({
-        defaultView: 'month',
-        events: events,
-        eventClick: function (calEvent, jsEvent, view) {
-            var botonHtml = "<a class='btn btn-sm btn-primary' style='width: 50%;margin: 0 auto 10px auto;display: block;' href='" + calEvent.link+"'>See more</a>"
-            $('#event-title').text(calEvent.title);
-            $('#event-description').html(calEvent.description);
-            $('#event-link').html(botonHtml);
-            $('#modal-event').modal('show')
-            $('#modal-event').modal();
+
+    $(document).ready(function () {
+        if (screen.width < 600) {
+            CambiarVistaCalendario()
         }
     });
-});
+
+
+
+
+var tipoVista = 0;
+function CambiarVistaCalendario() {
+
+    if (tipoVista == 0) {
+        calendar.changeView('listYear');
+        $('#botonCambiarVista').html("Cambiar a Modo Calendario");
+        tipoVista = 1;
+        if (screen.width < 600) {
+            document.getElementsByClassName("fc-view-harness")[0].style.height = "1000px";
+        }
+
+
+    } else if (tipoVista == 1) {
+        calendar.changeView('dayGridMonth');
+        $('#botonCambiarVista').html("Cambiar a Modo Lista");
+        tipoVista = 0;
+        if (screen.width < 600) {
+            document.getElementsByClassName("fc-view-harness")[0].style.height = "600px";
+        }
+    }
+
+}
