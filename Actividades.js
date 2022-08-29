@@ -10,7 +10,7 @@ var events = [
     {
         title: 'Reunión Comités Jas',
         start: '2022-08-28 17:00',
-        description: 'Domingo 8:00pm - Reunión con los Líderes Jas de las 8 estacas que abarca el Instituto Lima Sur',
+        description: 'Domingo 5:00pm - Reunión con los Líderes Jas de las 8 estacas que abarca el Instituto Lima Sur',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: reunion
     },
@@ -44,13 +44,6 @@ var events = [
     },
     {
         title: 'Reunión CEIR',
-        start: '2022-09-08 20:00',
-        description: 'Reunión del Consejo Estudiantil',
-        link: 'https://institutolimasur.github.io/HorarioILS/',
-        color: reunion
-    },
-    {
-        title: 'Reunión CEIR',
         start: '2022-09-10 13:00',
         description: 'Reunión del Consejo Estudiantil',
         link: 'https://institutolimasur.github.io/HorarioILS/',
@@ -58,7 +51,7 @@ var events = [
     },
     {
         title: 'Reunión CEIR',
-        start: '2022-09-16 20:00',
+        start: '2022-09-15 20:00',
         description: 'Reunión del Consejo Estudiantil',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: reunion
@@ -107,7 +100,7 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
     //initialView: 'listYear',
     initialView: 'dayGridMonth',
     events: events,
-    locale:'es',
+    locale:'es-en',
     eventClick: function (info) {
         console.log(info)
         var botonHtml = "<a class='btn btn-sm btn-primary' style='width: 50%;margin: 0 auto 10px auto;display: block;' href='" + info.event._def.extendedProps.link + "'>See more</a>"
