@@ -9,7 +9,7 @@ var ensayo = '#Ff7143'
 var events = [
     {
         title: 'Reunión Comités Jas',
-        start: '2022-09-25 17:00',
+        start: '2022-10-09 17:00',
         description: 'Domingo 5:00pm - Reunión con los Líderes Jas de las 8 estacas que abarca el Instituto Lima Sur',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: reunion
@@ -21,13 +21,13 @@ var events = [
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: actividad
     },
-    {
+/*     {
         title: 'Ginkana',
         start: '2022-09-23 19:00',
         description: ' --- Ver Descripción --- ',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: actividad
-    },
+    }, */
     {
         title: 'Campeonato',
         start: '2022-11-19 10:00',
@@ -35,13 +35,13 @@ var events = [
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: actividad
     },
-    {
+/*     {
         title: 'Fiesta de Gala',
         start: '2022-10-07 20:00',
         description: ' --- Ver Descripción --- ',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: fiesta
-    },
+    }, */
     {
         title: 'Fiesta de Halloween',
         start: '2022-10-28 20:00',
