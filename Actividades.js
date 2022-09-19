@@ -17,7 +17,7 @@ var events = [
     {
         title: 'ILS Talks',
         start: '2022-09-16 19:00',
-        description: ' --- Ver Descripción --- ',
+        description: '',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: actividad
     },
@@ -31,7 +31,7 @@ var events = [
     {
         title: 'Campeonato',
         start: '2022-11-19 10:00',
-        description: ' --- Ver Descripción --- ',
+        description: ' --- Próximamente más detalles --- ',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: actividad
     },
@@ -45,14 +45,14 @@ var events = [
     {
         title: 'Fiesta de Halloween',
         start: '2022-10-28 20:00',
-        description: ' --- Ver Descripción --- ',
+        description: ' --- Próximamente más detalles --- ',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: fiesta
     },
     {
         title: 'Reunión CEIR',
         start: '2022-09-01 20:00',
-        description: 'Reunión del Consejo Estudiantil',
+        description: 'Reunión del Consejo Estudiantil.',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: reunion
     },
@@ -86,23 +86,23 @@ var events = [
     },
     {
         title: 'Ensayo Elenco ILS',
-        start: '2022-09-09 19:30',
-        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
-        link: 'https://institutolimasur.github.io/HorarioILS/',
+        start: '2022-09-09 20:00',
+        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur. Únete al grupo con el botón de aqui abajo.',
+        link: 'https://chat.whatsapp.com/FVWEZslp4cLECrQ7cdBYn7',
         color: ensayo
     },
     {
         title: 'Ensayo Elenco ILS',
-        start: '2022-09-23 19:30',
-        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
-        link: 'https://institutolimasur.github.io/HorarioILS/',
+        start: '2022-09-09 20:00',
+        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur. Únete al grupo con el botón de aqui abajo.',
+        link: 'https://chat.whatsapp.com/FVWEZslp4cLECrQ7cdBYn7',
         color: ensayo
     },
     {
         title: 'Ensayo Elenco ILS',
-        start: '2022-09-30 19:30',
-        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur',
-        link: 'https://institutolimasur.github.io/HorarioILS/',
+        start: '2022-09-09 20:00',
+        description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur. Únete al grupo con el botón de aqui abajo.',
+        link: 'https://chat.whatsapp.com/FVWEZslp4cLECrQ7cdBYn7',
         color: ensayo
     }
 ]
