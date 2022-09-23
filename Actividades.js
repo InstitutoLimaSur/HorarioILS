@@ -16,7 +16,7 @@ var events = [
     },
     {
         title: 'ILS Talks',
-        start: '2022-09-16 19:00',
+        start: '2022-11-04 19:00',
         description: '',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: actividad
@@ -35,51 +35,51 @@ var events = [
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: actividad
     },
-/*     {
-        title: 'Fiesta de Gala',
-        start: '2022-10-07 20:00',
+    {
+        title: 'Hollywood Party',
+        start: '2022-10-14 20:00',
         description: ' --- Ver Descripción --- ',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: fiesta
-    }, */
+    }, 
     {
-        title: 'Fiesta de Halloween',
+        title: 'Actividad de Disfraces (Nombre por Confirmar)',
         start: '2022-10-28 20:00',
-        description: ' --- Próximamente más detalles --- ',
+        description: ' --- Próximamente más detalles. --- ',
         link: 'https://institutolimasur.github.io/HorarioILS/',
-        color: fiesta
+        color: actividad
     },
     {
         title: 'Reunión CEIR',
-        start: '2022-09-01 20:00',
+        start: '2022-09-30 20:00',
         description: 'Reunión del Consejo Estudiantil.',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: reunion
     },
     {
         title: 'Reunión CEIR',
-        start: '2022-09-10 13:00',
+        start: '2022-10-06 20:00',
         description: 'Reunión del Consejo Estudiantil',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: reunion
     },
     {
         title: 'Reunión CEIR',
-        start: '2022-09-15 20:00',
+        start: '2022-10-13 20:00',
         description: 'Reunión del Consejo Estudiantil',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: reunion
     },
     {
         title: 'Reunión CEIR',
-        start: '2022-09-22 20:00',
+        start: '2022-10-21 20:00',
         description: 'Reunión del Consejo Estudiantil',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: reunion
     },
     {
         title: 'Reunión CEIR',
-        start: '2022-09-30 20:00',
+        start: '2022-10-27 20:00',
         description: 'Reunión del Consejo Estudiantil',
         link: 'https://institutolimasur.github.io/HorarioILS/',
         color: reunion
