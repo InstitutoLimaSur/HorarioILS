@@ -86,21 +86,21 @@ var events = [
     },
     {
         title: 'Ensayo Elenco ILS',
-        start: '2022-09-09 20:00',
+        start: '2022-09-23 20:00',
         description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur. Únete al grupo con el botón de aqui abajo.',
         link: 'https://chat.whatsapp.com/FVWEZslp4cLECrQ7cdBYn7',
         color: ensayo
     },
     {
         title: 'Ensayo Elenco ILS',
-        start: '2022-09-09 20:00',
+        start: '2022-09-30 20:00',
         description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur. Únete al grupo con el botón de aqui abajo.',
         link: 'https://chat.whatsapp.com/FVWEZslp4cLECrQ7cdBYn7',
         color: ensayo
     },
     {
         title: 'Ensayo Elenco ILS',
-        start: '2022-09-09 20:00',
+        start: '2022-10-07 20:00',
         description: 'Ensayo del Elenco de Danzas y Salsa del Instituto Lima Sur. Únete al grupo con el botón de aqui abajo.',
         link: 'https://chat.whatsapp.com/FVWEZslp4cLECrQ7cdBYn7',
         color: ensayo
