@@ -36,7 +36,8 @@
                         <a href="index.html">
                             Horarios
                         </a>
-                        <a href="https://docs.google.com/spreadsheets/d/13Uvi8aaEKogsQX0IU7oUoKibCVRnnN1y/edit?usp=share_link&ouid=114389752283642217286&rtpof=true&sd=true">
+                        <a
+                            href="https://docs.google.com/spreadsheets/d/13Uvi8aaEKogsQX0IU7oUoKibCVRnnN1y/edit?usp=share_link&ouid=114389752283642217286&rtpof=true&sd=true">
                             Calendario
                         </a>
                     </div>
@@ -106,7 +107,7 @@
                                         <img class="card-img-top mt-2"
                                             data-bind="attr:{src: 'cursos/'+ $data.CursoCorto + '.png'},
                                                       click: function(data) { filtroTotal('-1', $data.CursoCorto,'-1') }" alt="Card image cap"
-                                                      onerror="this.src='cursos/Imagen no disponible.png';">
+                                            onerror="this.src='cursos/Imagen no disponible.png';">
 
                                         <div style="flex: 1 1 auto; margin-top: 8px;">
 
@@ -160,10 +161,11 @@
                             <div class="row justify-content-center">
 
                                 <a class="btn btn-primary btn-sm col-12 m-2"
-                                    data-bind="attr:{href: $data.LinkInscripcion}">
+                                    data-bind="attr:{href: $data.LinkInscripcion}" target="_blank">
                                     Inscribrirme en el Curso</a>
 
-                                <a class="btn btn-success btn-sm col-12" data-bind="attr:{href: $data.LinkWhatsapp}">
+                                <a class="btn btn-success btn-sm col-12" data-bind="attr:{href: $data.LinkWhatsapp}"
+                                    target="_blank">
                                     Unirme al Grupo de Whatsapp</a>
 
                             </div>
@@ -184,11 +186,64 @@
 
         </div>
 
-        <div class="BotonesFlotantes">
-            <a class="nav-link PunteroMouse" onclick="window.open('https://wa.me/51965379515')">
-                <img src="img/whatsapp (1).svg" />
-            </a>
+        <div class="BotonesFlotantes PunteroMouse"data-toggle="modal" data-target="#ModalWhatsapp" >
+            <img src="img/whatsapp (1).svg" />
+            <span class="PunteroMouse" 
+                  style="
+                        display: block;
+                        font-size: 12px;
+                        line-height: 12px;
+                        color: #7f57c3;
+                        font-weight: bold;
+                        text-shadow: #d0c5e7 0.1em 0.1em 0.2em;"> 
+            Grupos de Wtsp</span>
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="ModalWhatsapp" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-block">
+                        <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center;">Grupos de
+                            Whatsapp</h5>
+                    </div>
+                    <div class="modal-body">
+                        <a class="btn btn-primary btn-sm col-12 mb-3 mt-4"
+                            href="https://chat.whatsapp.com/HKxkStCVxlWL2eHCpq8le6" target="_blank">Grupo General - ILS
+                            News</a>
+
+                        <a class="btn btn-success btn-sm col-12 mb-3"
+                            href="https://chat.whatsapp.com/LvRMNXrRWLoIeyODAiXKCd" target="_blank">Actividades Sociales
+                            & Fiestas</a>
+
+                        <a class="btn btn-primary btn-sm col-12 mb-3"
+                            href="https://chat.whatsapp.com/BsoaDs3cV3w73cst9B52cq" target="_blank">Devocionales &
+                            Noches de Hogar</a>
+
+                        <a class="btn btn-success btn-sm col-12 mb-3"
+                            href="https://chat.whatsapp.com/FAjHU5osyebGMR8zBRoZL5" target="_blank">Juegos Online</a>
+
+                        <a class="btn btn-primary btn-sm col-12 mb-5"
+                            href="https://chat.whatsapp.com/GXFZJUut6uBDxCgrCGrU4b" target="_blank">Crecimiento Personal
+                            & Profesional</a>
+
+                        <div style="display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;">
+                            <a class="btn btn-secondary btn-sm col-5 mb-2" href="https://wa.me/51965379543"
+                                target="_blank">Director ILS</a>
+                            <a class="btn btn-secondary btn-sm col-5 mb-2" href="https://wa.me/51923431149"
+                                target="_blank">Pdte. CEIR</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </app>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
